@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parrot Wings</title>
+    <link href="style.css" rel="stylesheet" media="all" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="body__item header">
+        <div class="container">
+            <div class="header__body">
+                <a class="header__item header__logo logo" href="#">
+                    <span class="logo__logo">
+                        <span class="logo__p">P</span>
+                        <span class="logo__w">W</span>
+                    </span>
+                    <span class="logo__name">Parrot Wings</span>
+                </a>
+                <a class="header__item balance" href="#">
+                    <span class="balance__amount">16 741 500</span>
+                    <span class="balance__pw">PW</span>
+                </a>
+                <a class="header__item user" href="#">
+                    <span class="user__name">John Smith</span>
+                    <img class="user__photo user__photo--mini" src="img/user.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="body__item main">
+        <div class="container">
+            <div class="breadcambs main__item">
+                <a href="#" class="breadcambs__item breadcambs__item--active">Account</a>
+                <span class="breadcambs__item">/</span>
+                <span class="breadcambs__item breadcambs__item--inactive">Transactions</span>
+            </div>
+            <div class="form main__item">
+                <form class="form__form">
+                    <div class="form__item">
+                        <div class="form__group">
+                            <input class="form__input" placeholder="Search..." type="search">
+                            <input class="form__submit" id="search-btn" type="submit">
+                            <label class="form__icon" for="search-btn">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="6.5" stroke="#353B58" stroke-width="2" />
+                                    <line x1="13.1391" y1="11.8816" x2="18.1391" y2="16.8816" stroke="#353B58"
+                                        stroke-width="2" />
+                                </svg>
+                            </label>
+                        </div>
+
+                        <a class="form__second-icon" href="#">
+                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.95572 0C1.13995 0 0.667416 0.924163 1.14504 1.58549L6.2006 8.58549C6.23145 8.62821 6.26536 8.66807 6.30192 8.70487V16C6.30192 16.5523 6.74963 17 7.30192 17C7.8542 17 8.30192 16.5523 8.30192 16V8.61177L13.7447 1.61394C14.2556 0.957083 13.7875 0 12.9553 0H1.95572Z"
+                                    fill="#353B58" />
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <table class="transactions main__item">
+                <thead class="transactions__header">
+                    <tr class="transactions__row transactions__row_header">
+                        <th class="transactions__cell transactions__cell--right transactions__cell--header">Amount PW
+                        </th>
+                        <th class="transactions__cell transactions__cell--header">Date <a class="sorting" href="#"><svg
+                                    width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="7" height="2" rx="1" fill="#9A9DAC" />
+                                    <rect y="4" width="11" height="2" rx="1" fill="#9A9DAC" />
+                                    <rect y="8" width="16" height="2" rx="1" fill="#9A9DAC" />
+                                </svg>
+                            </a></th>
+                        <th class="transactions__cell transactions__cell--header transactions__cell--full-table">Time</th>
+                        <th class="transactions__cell transactions__cell--header transactions__cell--full-table">
+                            Payer/Recipient</th>
+                        <th class="transactions__cell transactions__cell--header transactions__cell--center  transactions__cell--full-table">Status</th>
+                        <th class="transactions__cell transactions__cell--header transactions__cell--full-table">Comment</th>
+                    </tr>
+                </thead>
+                <tbody class="transactions__tbody">
+                    <tr class="transactions__row transactions__row_body">
+                        <td
+                            class="transactions__cell transactions__cell--body transactions__cell--right transactions__cell--amount">
+                            11 520
+                        </td>
+                        <td class="transactions__cell transactions__cell--body">07.09.2020</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table">12:31</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--user transactions__cell--full-table">
+                            <img class="transactions__user-photo" src="img/rec_1.png" alt="">
+                            Kristin Leaman
+                        </td>
+                        <td class="transactions__cell transactions__cell--body  transactions__cell--center transactions__cell--full-table"><span
+                                class="status status--pending ">PENDING</span></td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table">For rent</td>
+                    </tr>
+                    <tr class="transactions__row transactions__row_body">
+                        <td
+                            class="transactions__cell transactions__cell--body transactions__cell--right transactions__cell--amount transactions__cell--minus">
+                            124 000
+                        </td>
+                        <td class="transactions__cell transactions__cell--body">06.09.2020</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table">19:16</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--user transactions__cell--full-table">
+                            <img class="transactions__user-photo" src="img/rec_2.png" alt="">
+                            Brandon Oliver
+                        </td>
+                        <td class="transactions__cell transactions__cell--body  transactions__cell--center transactions__cell--full-table"><span
+                                class="status status--success">SUCCESS</span></td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table"></td>
+                    </tr>
+                    <tr class="transactions__row transactions__row_body">
+                        <td
+                            class="transactions__cell transactions__cell--body transactions__cell--right transactions__cell--amount">
+                            1 820</td>
+                        <td class="transactions__cell transactions__cell--body">06.09.2020</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table">12:45</td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--user transactions__cell--full-table">
+                            <img class="transactions__user-photo" src="img/rec_3.png" alt="">
+                            Bob Herman
+                        </td>
+                        <td class="transactions__cell transactions__cell--body  transactions__cell--center transactions__cell--full-table"><span
+                                class="status status--dispute">DISPUTE</span></td>
+                        <td class="transactions__cell transactions__cell--body transactions__cell--full-table"></td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+    <footer class="body__item footer">
+        <div class="container">
+            <a class="footer__item footer__logo logo" href="#">
+                <span class="logo__logo logo__logo--footer">
+                    <span class="logo__p">P</span>
+                    <span class="logo__w logo__w--footer">W</span>
+                </span>
+                <span class="logo__name">Parrot Wings</span>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
